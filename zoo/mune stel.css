@@ -1,0 +1,190 @@
+﻿body {
+}
+::-webkit-scrollbar {
+    width: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0006;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #0009;
+    }
+
+body {
+    background-color: #000f;
+}
+
+#container {
+    padding: 2em;
+    background-color: #0000;
+}
+
+#scrollcontainer {
+    border-color: #000f;
+    border-width: thick;
+    border-style: double;
+    padding: 1em;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ffb84525-0a95-4815-a92a-5c9f3ade809d/dc2qhlx-e15fa8bf-ef3d-4e00-b728-547051bf85a9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZmYjg0NTI1LTBhOTUtNDgxNS1hOTJhLTVjOWYzYWRlODA5ZFwvZGMycWhseC1lMTVmYThiZi1lZjNkLTRlMDAtYjcyOC01NDcwNTFiZjg1YTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.efvWrRCSilQfghMMh-gUNS41goDhZTI6aEMqgp5U2bo);
+}
+
+#scrollcontent {
+    padding: 1em;
+    background-color: #fff6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: overlay;
+}
+
+.tile {
+    margin: 0em 1em;
+    padding: 1em;
+    background-color: #fff9;
+}
+
+    .tile h2 {
+        text-align: center;
+        background-color: #0009;
+        color: #ffff;
+        font-size: 2em;
+        font-family: Righteous;
+    }
+
+.imgcontainer {
+    display: inline-block;
+    position: relative;
+}
+
+.tile img {
+    height: 300px;
+    position: relative;
+}
+
+.imgcontainer .infocard {
+    background-color: #fffc;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    font-family: Righteous;
+}
+
+.imgcontainer:hover .infocard {
+    display: inline-block;
+    animation: cardflip 2s 1;
+}
+
+.infocard ul {
+    line-height: 3em;
+}
+
+#footnotes {
+    color: #ffff;
+    font-weight: 900;
+    text-shadow: 0 0 1em #000f;
+    padding: 1em;
+    position: absolute;
+    background: linear-gradient(to right, #ff8f0088, #ff8f00dd), url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ffb84525-0a95-4815-a92a-5c9f3ade809d/dc2qhlx-e15fa8bf-ef3d-4e00-b728-547051bf85a9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZmYjg0NTI1LTBhOTUtNDgxNS1hOTJhLTVjOWYzYWRlODA5ZFwvZGMycWhseC1lMTVmYThiZi1lZjNkLTRlMDAtYjcyOC01NDcwNTFiZjg1YTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.efvWrRCSilQfghMMh-gUNS41goDhZTI6aEMqgp5U2bo);
+    background-position: center;
+    background-color: #ff8f0085;
+    right: 0;
+    bottom: 1em;
+    border-radius: 30px 0px 0px 30px;
+}
+
+    #footnotes p {
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
+
+    #footnotes a {
+        color: inherit;
+    }
+
+        #footnotes a:hover {
+            text-shadow: 0 0 1em #000f, 0 0 1em #000f;
+        }
+
+
+
+@keyframes cardflip {
+    0% {
+        transform: scale(1, 0.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    height: 240px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+.InnerSection {
+    float: left;
+    margin: 0 28px;
+    width: 20%;
+}
+
+.InnerHeading {
+    font-weight: 500;
+    color: gray;
+}
+
+ol {
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: blue;
+    }
+
+.SocialIcon {
+    height: 28px;
+    border-radius: 7px;
+}
+
+#IconList {
+    display: flex;
+}
+
+    #IconList li {
+        margin: 0 10px;
+    }
+
+.Credits {
+    margin-top: 20px;
+    width: 100vw;
+    text-align: center;
+    float: left;
+}
